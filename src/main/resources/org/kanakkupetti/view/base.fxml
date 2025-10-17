@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.kanakkupetti.controller.KanakkuController">
+
+    <!-- Left menu -->
+    <left>
+        <VBox spacing="10" style="-fx-background-color: #2b2b2b; -fx-padding: 10;">
+            <Button text="Inventory" onAction="#showInventory" />
+            <Button text="Users" onAction="#showUsers" />
+            <Button text="Billing" onAction="#showBilling" />
+            <Button text="Reports" onAction="#showReports" />
+        </VBox>
+    </left>
+
+    <!-- Center: dynamic content -->
+    <center>
+        <StackPane fx:id="mainContent" />
+    </center>
+</BorderPane>
